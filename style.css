@@ -1,0 +1,178 @@
+/**
+* You can edit this whole file.
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --gray-0: #000000;
+  --gray-1: #222222;
+  --gray-2: #dddddd;
+  --gray-3: #fbfbfb;
+  --gray-4: #ffffff;
+  --primary: #8a2be2;
+  --secondary: #20d397;
+  --font-size-1: 1.5rem;
+  --font-size-2: 1.25rem;
+  --font-size-3: 1rem;
+  --font-weight-thin: 300;
+  --font-weight-bold: 600;
+  --font-weight-heavy: 800;
+  --spacer-1: .25rem;
+  --spacer-2: .5rem;
+  --spacer-3: 1rem;
+  --spacer-4: 1.5rem;
+  --spacer-5: 2rem;
+  --shadows: 7px 7px 7px rgba(0, 0, 0, .15);
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.44;
+  background-color: var(--gray-3);
+}
+
+.header-content {
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: space-around;
+  color: var(--gray-3);
+  padding: 5px 0 5px 0;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-container img {
+  width: 35px;
+  margin-left: 25px;
+  margin-right: 10px;
+}
+
+.logo-container span {
+  font-weight: var(--font-weight-heavy);
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  display: flex;
+  width: 100%;
+}
+
+li {
+  margin-right: 25px;
+}
+
+li a {
+  color: var(--gray-4);
+  font-weight: var(--font-weight-heavy);
+}
+
+li:nth-child(2) {
+  border-bottom: 2px solid var(--gray-3);
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  max-width: 940px;
+}
+
+h1 {
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-bold);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: var(--gray-0);
+}
+
+.card-container {
+  display: flex;
+  width: 100%;
+  max-width: 940px;
+  justify-content: space-between;
+}
+
+article {
+  border: 1px solid var(--gray-2);
+  width: 100%;
+  max-width: 300px;
+  box-shadow: var(--shadows);
+  position: relative;
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-thin);
+  padding: 9px;
+  color: var(--gray-1);
+}
+
+article h2 {
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-bold);
+  padding: 10px 0 10px 0;
+}
+
+article p {
+  margin-bottom: 10px;
+}
+
+.card-text {
+  margin-bottom: 50px;
+}
+
+.btn {
+  background-color: var(--primary);
+  padding: 5px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: 5px;
+  margin-left: 5px;
+  border: none;
+  padding: 7px;
+}
+
+.btn a {
+  display: flex;
+  align-items: center;
+  color: var(--gray-3);
+}
+
+.btn-img {
+  width: 15px;
+  margin-right: 5px;
+}
+
+@media (max-width: 767px) {
+  .card-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .title{
+    width: 300px;
+    flex-direction: column;
+    align-items: start;
+  }
+}
